@@ -10,7 +10,7 @@ services:
     restart: unless-stopped
     image: ollama/ollama:latest
     ports:
-      - 11434:11434
+      - 12434:11434
     networks:
       - ollama-docker
     deploy:
