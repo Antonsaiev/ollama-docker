@@ -9,6 +9,9 @@ services:
     tty: true
     restart: unless-stopped
     image: ollama/ollama:latest
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
     ports:
       - 12434:11434
     networks:
